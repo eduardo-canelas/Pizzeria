@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Pizzeria</title>
 </head>
+
 <body>
     <header>
-        <h1 class = "title" id = "title">Pizza Ordering Form</h1>
+        <h1 class="title" id="title">Pizza Ordering Form</h1>
     </header>
     <main>
-        <h2 class = "subtitle" id = "subtitle">Contanct Information</h2>
+        <h2 class="subtitle" id="subtitle">Contanct Information</h2>
         <form action="">
-            <label for = "name">Name:</label>
-            <input type="text" id="name" name="name" required title = "Please enter your name" placeholder="Please enter your name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required title="Please enter your name"
+                placeholder="Please enter your name">
             <br>
-            <label for = "phone">Phone:</label>
-            <input type="phone" id="phone" name="phone" required title = "Please enter your phone number" placeholder="Please enter your phone number">
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required title="Please enter your phone number"
+                placeholder="Please enter your phone number">
             <br>
-            <label for = "email">Email:</label>
-            <input type="email" id="email" name="email" required title = "Please enter your email" placeholder="Please enter your email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required title="Please enter your email"
+                placeholder="Please enter your email">
             <br>
+            <h2 class="selectPizza" id="selectPizza">Select Pizza Size</h2>
+            <select name="pizzaSize" id="pizzaSize" required title="Please select a pizza size"
+                placeholder="Please select a pizza size">
+                <option value="small">--Select Size--</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+            <h2 class="selectSauce" id="selectSauce" tittle="please select a sauce" placeholder="please select a sauce">
+                Pizza Sauce</h2>
+            <input type="radio" id="marinara" name="sauce" value="marinara" required title="Please select a sauce">
+            <label for="marinara" tittle="please select a sauce">Marinara</label>
+            <br>
+            <input type="radio" id="ranch" name="sauce" value="ranch" required title="Please select a sauce"
+                tittle="please select a sauce">
+            <label for="ranch">Ranch</label>
+            <br>
+            <input type="radio" id="noSauce" name="sauce" value="noSauce" required title="Please select a sauce">
+            <label for="noSauce" tittle="please select a sauce">No Sauce</label>
+            <br>
+            <h2 class="selectTopings" id="selectTopings">Select Topings</h2>
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="sausage" name="sausage" value="sausage">
+            <label for="sausage">Sausage</label>
+            <br>
+            <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+            <br>
+            <input type="checkbox" id="peppers" name="peppers" value="peppers">
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" id="onions" name="onions" value="onions">
+            <label for="onions">Onions</label>
+            <br>
+            <h2 class="additionalInstructions" id="additionalInstructions">Additional Instructions</h2>
+            <textarea name="additionalInstructions" id="additionalInstructions"
+                placeholder="Add Instructions"></textarea>
+            <br>
+            <input type="submit" value="Submit">
         </form>
-        <h2 class = "selectPizza" id = "selectPizza">Select Pizza Size</h2>
+        <br>
+        <table border="1">
+            <caption>List of my Favorite Video Games</caption>
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Rockstar Games</td>
+                <td>Grand Theft Auto V</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td>Red Dead Redemption</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td>Tom Clansys</td>
+                <td>Rainbow Six Siege</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>Ubisoft</td>
+                <td>Assasin's Creed Black Flag</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td colspan="3">Count: 4 Games</td>
+            </tr>
+        </table>
     </main>
 </body>
+
 </html>
